@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/softnanolab/softnanolabweb/issues"
   },
-  "homepage": "https://softnanolab.github.io/home",
+  "homepage": "https://softnanolab.github.io/softnanolabweb",
   "dependencies": {
     "gh-pages": "^3.2.3"
   }
