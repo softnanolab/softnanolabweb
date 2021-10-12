@@ -5,3 +5,6 @@ _site/
 
 # github
 *.vscode/
+
+# node modules
+node_modules/*
