@@ -2,3 +2,9 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# github
+*.vscode/
+
+# node modules
+node_modules/*
