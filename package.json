@@ -1,20 +1,20 @@
 {
-  "name": "softnanolabweb",
+  "name": "softnanoweb",
   "version": "1.0.0",
   "description": "Softnanolab Website",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d softnanolabweb"
+    "deploy": "gh-pages -d softnanoweb"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/softnanolab/softnanolabweb.git"
+    "url": "git+https://github.com/softnanolab/softnanoweb.git"
   },
   "keywords": [],
   "author": "Shanil Panara",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/softnanolab/softnanolabweb/issues"
+    "url": "https://github.com/softnanolab/softnanoweb/issues"
   },
   "homepage": "https://softnanolab.github.io/",
   "dependencies": {
