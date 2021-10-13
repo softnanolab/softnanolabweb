@@ -23,3 +23,7 @@ This deploys the pages inside `softnanoweb` onto the gh-pages branch of the repo
 ## Deploy
 
 After pushing... use the command `npm run deploy` and that should deploy the page
+
+## Locally deploying
+
+Use live server vscode extension!

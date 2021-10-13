@@ -4,7 +4,7 @@
   "description": "Softnanolab Website",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build src/styles.css -o softnanoweb/styles.css",
+    "build-css": "tailwindcss build -i src/styles.css -o softnanoweb/styles.css",
     "deploy": "gh-pages -d softnanoweb"
   },
   "repository": {
