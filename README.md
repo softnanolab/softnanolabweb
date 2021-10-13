@@ -1,6 +1,6 @@
 # Softnanolab Group Website
 
-This will be our new website repository!
+This will be our new website repository! It is currently being hosted here: https://softnanolab.github.io/softnanoweb/
 
 # tailwind
 
