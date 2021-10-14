@@ -10,6 +10,14 @@ Using https://tailwindcss.com/docs/installation
 - `"build-css": "tailwindcss build src/styles.css -o softnanoweb/styles.css"` in the scripts part of package.json will process the css
 - run using `npm run build-css`
 
+## customising tailwind classes
+
+Firstly create a `tailwind.config.js` file using `npx tailwindcss init --full`, which creates a config file including **all** the default values.
+
+Now rename this to `tailwind-default.config.js` file (FOR REFERENCE) and then run the same command without the --full flag: `npx tailwindcss init`
+
+Whenever a default value is changed (not recommended), or new value is added (the way to do it...), just re-execute `npm run build-css` (i.e. that from package.json file) in the terminal! Make sure you are in the base directory of the repo!
+
 # Package.json
 
 ```
