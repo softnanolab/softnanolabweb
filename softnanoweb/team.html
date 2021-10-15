@@ -20,7 +20,7 @@
   <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
   <style>
     .gradient {
-      background: linear-gradient(40deg, #003085 0%, #0072CE 100%);
+      background: linear-gradient(0deg, #023a9b 0%, #0072CE 100%);
     }
   </style>
 </head>
@@ -155,36 +155,54 @@
       <div class="h-1 mx-auto bg-white w-64 opacity-50 my-0 py-0 rounded-t"></div>
     </div> -->
   </nav>
-  <section class="bg-white border-b py-8 mt-14 lg:mt-16 gradient">
-    <!-- ABOUT US -->
-    <div class="container max-w-5xl mx-auto">
+  <!-- The Team Banner -->
+  <section class="bg-white border-b mt-14 lg:mt-16 gradient">
+    <div class="container max-w-6xl mx-auto">
       <h1 class="w-full my-4 text-5xl font-bold leading-tight text-center text-white">
         The Team
       </h1>
       <!-- line -->
-      <div class="w-full mb-4">
-        <div class="h-1 mx-auto bg-white w-64 opacity-50 my-0 py-0 rounded-t"></div>
-      </div>
-      <!-- text -->
-      <div class="mb-4 text-black m-8 bg-white rounded-2xl shadow-lg">
-        <div class="p-4 w-full text-justify">
+      <div class="mb-4 h-1 mx-auto bg-white w-64 opacity-50 my-0 py-0 rounded-t"></div>
+      <!-- Stefano Card -->
+      <section class="text-black mt-4 mb-8 mx-auto p-2 ">
+        <div class="max-w-6xl justify-between flex flex-wrap md:flex-nowrap ">
+          <!-- IMAGE GOES HERE -->
+          <div class="self-center flex justify-center mx-auto transform md:translate-x-5 z-0">
+            <img src="/softnanoweb/assets/headshots/stefano.jpg" alt=""
+              class="rounded-t-2xl md:rounded-2xl h-48 md:h-72">
+          </div>
+          <!-- TEXT GOES HERE -->
+          <div
+            class="bg-white rounded-2xl text-center md:text-left md:w-4/5 flex flex-wrap flex-col content-center md:p-3 z-10 opacity-90">
+            <h1 class="font-extrabold text-xl pt-4 md:text-3xl md:pt-0">Dr. Stefano Angioletti-Uberti</h1>
+            <div class="inline leading-tight text-gray-700 md:text-lg md:leading-snug">
+              <h1>Senior Lecturer, Imperial College London</h1>
+              <h1>Theory and Simulations of Materials</h1>
+            </div>
+            <div class="text-justify text-xs mt-2 mx-3 md:text-lg">
+              I am a Senior Lecturer (Associate Professor) in Theory and Simulation of Materials at Imperial College
+              London in the Department of Materials, which I joined as a Lecturer in 2016, and Group Leader of the
+              SoftNanoLab. I received my BSc and MSc in Materials Science from Universita’ degli Studi di Milano-Bicocca
+              in Milano and continued with a PhD at Imperial College London also in Materials Science. From 2010 to 2013
+              I worked as a Research Asscoiate at Univeristy of Cambridge working on development of theory and
+              simulations to describe DNA-coated colloids and their self-assembly. From 2013 to 2015 I was awarded an
+              Alexander-vom-Humboldt Fellowship and worked at the Helmholtz Zentrum Berlin on the development of
+              theoretical models for protein adsorption on nanoparticles and describtion of kinetic processes in
+              nanoreactors. From 2015 to 2018 I was Professor of Soft Matter at Beijing University of Chemical
+              Technology, initially as a full member and later with a visiting position. In 2019, I have been awarded
+              the Chinese Academy of Science Presidential Fellowship (PiFi fellowship) to continue my collaboration with
+              the CAS Institute of Physics in Beijing.
+            </div>
+            <div class="p-3 md:pl-0">
+              <a
+                class="rounded-full px-2 py-1 text-white bg-gradient-to-b from-blue-500 to-blue-700 hover:bg-blue-800 cursor-pointer text-sm">Read
+                more about
+                me</a>
+            </div>
+          </div>
 
-          <p class="p-2">So-called <b>"Soft Matter"</b> encompasses a wide range of systems, from <b>nanoparticles to
-              proteins</b>, and
-            <b>membranes to synthetic polymers</b>. In general, soft materials are <b>highly responsive</b> and their
-            behaviour can be tuned by changing their local environment.
-          </p>
-
-          <p class="p-2">At the SoftNanoLab, we are interested in using a <u>combination of theory, computer simulations
-              and experiments</u> to unravel the design principles that allow us to obtain a specific response, all
-            tailored towards a specific application.These applications can range from <b>nanoparticles selectively
-              delivering drugs</b> to <b>molecular glues</b> for biological tissues, and polymer-based <b>biosensors
-              which change colour</b> upon the presence of certain molecules.
-          </p>
-          <p class="p-2">Our group is willing to push the boundaries of materials science to discover the materials of
-            tomorrow.</p>
         </div>
-      </div>
+      </section>
     </div>
 
 
@@ -223,7 +241,7 @@
       </div>
       <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
         <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-          <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+          <a href="#" class="flex flex-wrap hover:no-underline">
             <p class="w-full text-gray-600 text-xs md:text-sm px-6">
               xGETTING STARTED
             </p>
