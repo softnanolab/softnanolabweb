@@ -33592,6 +33592,14 @@ video {
   text-shadow: none;
 }
 
+.gradientlighter {
+  background: linear-gradient(90deg, #F3F4F6 0%, #93C5FD 100%);
+}
+
+.gradient {
+  background: linear-gradient(150deg, #023a9b 0%, #0072CE 100%);
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

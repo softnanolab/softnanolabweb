@@ -14,18 +14,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" /> -->
   <link rel="stylesheet" href="/softnanoweb/styles.css" />
-  <!--Replace with your tailwind.css once created-->
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
   <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
   <style>
+    .gradientlighter {
+      background: linear-gradient(260deg, #023a9b 0%, #3B82F6 100%);
+    }
+
     .gradient {
-      background: linear-gradient(0deg, #023a9b 0%, #0072CE 100%);
+      background: linear-gradient(150deg, #023a9b 0%, #0072CE 100%);
     }
   </style>
 </head>
 
-<body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Lato', sans-serif;">
+<body class="leading-normal tracking-normal text-white gradientlighter" style="font-family: 'Lato', sans-serif;">
   <!--Nav-->
   <nav id="header" class="fixed w-full z-30 top-0 text-white">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
@@ -86,8 +89,8 @@
         </svg>
 
 
-        <span
-          class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl xl:text-4xl transform transition hover:scale-105 duration-300 ease-in-out">SoftNanoLab</span>
+        <a class="toggleColour text-white font-bold text-2xl xl:text-4xl transform transition hover:scale-105 duration-300 ease-in-out"
+          href="index.html">SoftNanoLab</a>
 
       </div>
       <!-- MENU TOGGLE THING -->
@@ -102,13 +105,13 @@
       </div>
       <!-- MENU ITEMS! -->
       <div
-        class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-4 lg:mt-0 bg-white lg:bg-transparent text-grey-100 p-4 lg:p-0 z-20 filter brightness-125 text-lg"
+        class="hidden w-full lg:w-auto lg:flex lg:items-center bg-pink-900 lg:bg-transparent text-grey-100 p-4 lg:p-0 z-20 filter brightness-125 text-lg"
         id="nav-content">
         </li>
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
           <!-- Home -->
           <li class="mr-3">
-            <a class="inline-block text-black hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out"
+            <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
               href="index.html">Home</a>
           </li>
           <li class="pr-4 pl-2 my-1.5">
@@ -118,96 +121,96 @@
             </button>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-black hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out"
+            <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
               href="#">Our Research</a>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-black hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out"
+            <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
               href="#">Publications</a>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-black hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out"
+            <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
               href="#">Files</a>
           </li>
           <li class="mr-4">
-            <a class="inline-block text-black hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out"
+            <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
               href="#">Contact</a>
           </li>
           <!-- Twitter -->
-          <div class="flex col">
+          <div class="flex col mr-3">
             <div class="flex items-center">
-              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-2 lg:py-2 flex items-center text-xs uppercase font-bold transform transition hover:scale-150 duration-300 ease-in-out"
-                href="#pablo"><i class="text-blue-500 fab fa-twitter text-lg leading-lg "></i><span
-                  class="lg:hidden inline-block ml-2">Twitter</span></a>
+              <a class="px-3 py-2 lg:py-2 flex items-center text-xs uppercase font-bold transform transition hover:scale-150 duration-300 ease-in-out"
+                href="#pablo"><i class="text-white lg:text-blue-500 fab fa-twitter text-lg leading-lg "></i><span
+                  class="lg:hidden inline-block ml-2 text-white">Twitter</span></a>
             </div>
             <!-- Github -->
             <div class="flex items-center">
-              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold transform transition hover:scale-150 duration-300 ease-in-out"
-                href="#pablo"><i class="text-blue-500 fab fa-github text-lg leading-lg "></i><span
-                  class="lg:hidden inline-block ml-2">Github</span></a>
+              <a class="px-3 py-2 flex items-center text-xs uppercase font-bold transform transition hover:scale-150 duration-300 ease-in-out"
+                href="#pablo"><i class="text-white lg:text-blue-500 fab fa-github text-lg leading-lg "></i><span
+                  class="lg:hidden inline-block ml-2 text-white">Github</span></a>
             </div>
           </div>
         </ul>
       </div>
     </div>
-    <!-- <hr class="border-b border-black opacity-25 my-0 py-0" /> -->
-    <!-- <div class="w-full mb-4">
-      <div class="h-1 mx-auto bg-white w-64 opacity-50 my-0 py-0 rounded-t"></div>
-    </div> -->
+
   </nav>
   <!-- The Team Banner -->
-  <section class="bg-white border-b mt-14 lg:mt-16 gradient">
+  <section class="mt-16 lg:mt-24 bg-transparent">
     <div class="container max-w-6xl mx-auto">
-      <h1 class="w-full my-4 text-5xl font-bold leading-tight text-center text-white">
+      <h1 class="w-full my-4 lg:mb-10 text-5xl font-bold leading-tight text-center text-white">
         The Team
       </h1>
-      <!-- line -->
-      <div class="mb-4 h-1 mx-auto bg-white w-64 opacity-50 my-0 py-0 rounded-t"></div>
-      <!-- Stefano Card -->
-      <section class="text-black mt-4 mb-8 mx-auto p-2 ">
-        <div class="max-w-6xl justify-between flex flex-wrap md:flex-nowrap ">
-          <!-- IMAGE GOES HERE -->
-          <div class="self-center flex justify-center mx-auto transform md:translate-x-5 z-0">
-            <img src="/softnanoweb/assets/headshots/stefano.jpg" alt=""
-              class="rounded-t-2xl md:rounded-2xl h-48 md:h-72">
-          </div>
-          <!-- TEXT GOES HERE -->
-          <div
-            class="bg-white rounded-2xl text-center md:text-left md:w-4/5 flex flex-wrap flex-col content-center md:p-3 z-10 opacity-90">
+      <!-- <hr class="mx-auto h-2 bg-red-500 border-0 opacity-50 "> -->
+    </div>
+  </section>
+
+  <section class="bg-transparent py-4">
+    <!-- Stefano Card -->
+    <section class="text-black mb-8 mx-auto p-2 flex justify-center">
+      <!-- Container for image and text -->
+      <div class="max-w-6xl flex flex-col md:flex-row justify-center md:justify-between md:space-x-5">
+        <!-- IMAGE GOES HERE -->
+        <div class="self-center flex justify-center z-0 overflow-visible">
+          <img src="/softnanoweb/assets/headshots/stefano.jpg" alt="" class="rounded-full  w-48 md:w-72 object-cover">
+        </div>
+        <!-- TEXT GOES HERE -->
+        <div class="relative w-full">
+          <div class="relative bg-white bg-opacity-80 rounded-2xl text-center flex flex-col md:p-3 z-10 shadow-xl">
             <h1 class="font-extrabold text-xl pt-4 md:text-3xl md:pt-0">Dr. Stefano Angioletti-Uberti</h1>
             <div class="inline leading-tight text-gray-700 md:text-lg md:leading-snug">
               <h1>Senior Lecturer, Imperial College London</h1>
               <h1>Theory and Simulations of Materials</h1>
             </div>
-            <div class="text-justify text-xs mt-2 mx-3 md:text-lg">
+            <h1 id="about"
+              class="bg-blue-300 text-blue-700 font-extrabold text-sm md:text-xl rounded-xl mx-5 my-2 px-2 py-1">
+              About</h1>
+            <div id="about-text" class="text-justify text-xs mx-4 md:text-lg mb-5">
               I am a Senior Lecturer (Associate Professor) in Theory and Simulation of Materials at Imperial College
               London in the Department of Materials, which I joined as a Lecturer in 2016, and Group Leader of the
-              SoftNanoLab. I received my BSc and MSc in Materials Science from Universita’ degli Studi di Milano-Bicocca
-              in Milano and continued with a PhD at Imperial College London also in Materials Science. From 2010 to 2013
-              I worked as a Research Asscoiate at Univeristy of Cambridge working on development of theory and
-              simulations to describe DNA-coated colloids and their self-assembly. From 2013 to 2015 I was awarded an
-              Alexander-vom-Humboldt Fellowship and worked at the Helmholtz Zentrum Berlin on the development of
-              theoretical models for protein adsorption on nanoparticles and describtion of kinetic processes in
+              SoftNanoLab. I received my BSc and MSc in Materials Science from Universita’ degli Studi di
+              Milano-Bicocca in Milano and continued with a PhD at Imperial College London also in Materials Science.
+              From 2010 to 2013 I worked as a Research Asscoiate at Univeristy of Cambridge working on development of
+              theory and simulations to describe DNA-coated colloids and their self-assembly. From 2013 to 2015 I was
+              awarded an Alexander-vom-Humboldt Fellowship and worked at the Helmholtz Zentrum Berlin on the development
+              of theoretical models for protein adsorption on nanoparticles and describtion of kinetic processes in
               nanoreactors. From 2015 to 2018 I was Professor of Soft Matter at Beijing University of Chemical
-              Technology, initially as a full member and later with a visiting position. In 2019, I have been awarded
-              the Chinese Academy of Science Presidential Fellowship (PiFi fellowship) to continue my collaboration with
-              the CAS Institute of Physics in Beijing.
+              Technology, initially as a full mempossber and later with a visiting position. In 2019, I have been
+              awarded the Chinese Academy of Science Presidential Fellowship (PiFi fellowship) to continue my
+              collaboration
+              with the CAS Institute of Physics in Beijing.
             </div>
-            <div class="p-3 md:pl-0">
-              <a
-                class="rounded-full px-2 py-1 text-white bg-gradient-to-b from-blue-500 to-blue-700 hover:bg-blue-800 cursor-pointer text-sm">Read
-                more about
-                me</a>
-            </div>
+            <!-- <div class="p-3 md:pl-0 md:pt-5">
+            <a
+              class="rounded-full px-2 py-1 md:py-3 md:px-4 text-white bg-gradient-to-b from-blue-500 to-blue-700 hover:to-pink-600 cursor-pointer text-sm md:text-lg">Read
+              more about
+              me</a>
+          </div> -->
           </div>
-
         </div>
-      </section>
-    </div>
 
-
-  </section>
-  <section class="bg-white border-b py-8">
+      </div>
+    </section>
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
       <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
         Title
@@ -504,6 +507,7 @@
     var navaction = document.getElementById("navAction");
     var brandname = document.getElementById("brandname");
     var toToggle = document.querySelectorAll(".toggleColour");
+    var toToggle2 = document.querySelectorAll(".toggleColour2");
     var navtitle = document.getElementById("navtitle");
 
 
@@ -519,12 +523,16 @@
         // navaction.classList.add("text-white");
         //Use to switch toggleColour colours
         for (var i = 0; i < toToggle.length; i++) {
-          toToggle[i].classList.add("text-gray-800");
+          toToggle[i].classList.add("text-black");
           toToggle[i].classList.remove("text-white");
         }
+        for (var i = 0; i < toToggle2.length; i++) {
+          toToggle2[i].classList.add("lg:text-black");
+          toToggle2[i].classList.remove("lg:text-white");
+        }
         header.classList.add("shadow");
-        navcontent.classList.remove("bg-gray-100");
-        navcontent.classList.add("bg-white");
+        // navcontent.classList.remove("bg-gray-100");
+        // navcontent.classList.add("bg-white");
         navtitle.classList.white("text-white");
         navtitle.classList.add("text-black");
       } else {
@@ -536,12 +544,15 @@
         //Use to switch toggleColour colours
         for (var i = 0; i < toToggle.length; i++) {
           toToggle[i].classList.add("text-white");
-          toToggle[i].classList.remove("text-gray-800");
+          toToggle[i].classList.remove("text-black");
         }
-
+        for (var i = 0; i < toToggle2.length; i++) {
+          toToggle2[i].classList.add("lg:text-white");
+          toToggle2[i].classList.remove("lg:text-black");
+        }
         header.classList.remove("shadow");
-        navcontent.classList.remove("bg-white");
-        navcontent.classList.add("bg-gray-100");
+        // navcontent.classList.remove("bg-white");
+        // navcontent.classList.add("bg-gray-100");
         navtitle.classList.white("text-black");
         navtitle.classList.add("text-white");
       }
