@@ -14,18 +14,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" /> -->
   <link rel="stylesheet" href="/softnanoweb/styles.css" />
-  <!--Replace with your tailwind.css once created-->
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
   <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
   <style>
+    .gradientlighter {
+      background: linear-gradient(260deg, #023a9b 0%, #3B82F6 100%);
+    }
+
     .gradient {
-      background: linear-gradient(350deg, #003085 0%, #0072CE 100%);
+      background: linear-gradient(150deg, #023a9b 0%, #0072CE 100%);
     }
   </style>
 </head>
 
-<body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Lato', sans-serif;">
+<body class="leading-normal tracking-normal text-white gradientlighter" style="font-family: 'Lato', sans-serif;">
   <!--Nav-->
   <nav id="header" class="fixed w-full z-30 top-0 text-white">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
@@ -86,14 +89,14 @@
         </svg>
 
 
-        <span
-          class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl xl:text-4xl transform transition hover:scale-105 duration-300 ease-in-out">SoftNanoLab</span>
+        <a class="toggleColour text-white font-bold text-2xl xl:text-4xl transform transition hover:scale-105 duration-300 ease-in-out"
+          href="index.html">SoftNanoLab</a>
 
       </div>
       <!-- MENU TOGGLE THING -->
       <div class="block lg:hidden pr-4">
         <button id="nav-toggle"
-          class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          class="flex items-center p-1 text-pink-800 hover:text-gray-100 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -102,55 +105,54 @@
       </div>
       <!-- MENU ITEMS! -->
       <div
-        class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-4 lg:mt-0 bg-white lg:bg-transparent text-grey-100 p-4 lg:p-0 z-20 filter brightness-125 text-lg"
+        class="hidden w-full lg:w-auto lg:flex lg:items-center mt-2 lg:mt-0 bg-pink-900 lg:bg-transparent p-4 lg:p-0 z-20 filter brightness-125 text-lg"
         id="nav-content">
         </li>
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
           <!-- Home -->
           <li class="pr-4 pl-2 my-1.5">
             <button id="navAction"
-              class="mx-auto lg:mx-0 bg-black text-white rounded-full lg:mt-0 py-1 px-3 focus:outline-none focus:shadow-outline transform transition hover:scale-125 duration-300 ease-in-out"><a
-                href="#">Home</a>
+              class="mx-auto lg:mx-0 bg-black text-white rounded-full lg:mt-0 py-1 px-3 focus:outline-none focus:shadow-outline transform transition hover:scale-125 duration-300 ease-in-out">Home
             </button>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-black hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out"
+            <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
               href="team.html">The Team</a>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-black hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out"
-              href="#">Our Research</a>
+            <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
+              href="research.html">Our Research</a>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-black hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out"
-              href="#">Publications</a>
+            <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
+              href="publications.html">Publications</a>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-black hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out"
+            <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
               href="#">Files</a>
           </li>
           <li class="mr-4">
-            <a class="inline-block text-black hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out"
-              href="#">Contact</a>
+            <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
+              href="contact.html">Contact</a>
           </li>
           <!-- Twitter -->
-          <div class="flex col">
+          <div class="flex col mr-3">
             <div class="flex items-center">
-              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-2 lg:py-2 flex items-center text-xs uppercase font-bold transform transition hover:scale-150 duration-300 ease-in-out"
-                href="#pablo"><i class="text-blue-500 fab fa-twitter text-lg leading-lg "></i><span
-                  class="lg:hidden inline-block ml-2">Twitter</span></a>
+              <a class="px-3 py-2 lg:py-2 flex items-center text-xs uppercase font-bold transform transition hover:scale-150 duration-300 ease-in-out"
+                href="#pablo"><i class="text-white lg:text-blue-500 fab fa-twitter text-lg leading-lg "></i><span
+                  class="lg:hidden inline-block ml-2 text-white">Twitter</span></a>
             </div>
             <!-- Github -->
             <div class="flex items-center">
-              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold transform transition hover:scale-150 duration-300 ease-in-out"
-                href="#pablo"><i class="text-blue-500 fab fa-github text-lg leading-lg "></i><span
-                  class="lg:hidden inline-block ml-2">Github</span></a>
+              <a class="px-3 py-2 flex items-center text-xs uppercase font-bold transform transition hover:scale-150 duration-300 ease-in-out"
+                href="#pablo"><i class="text-white lg:text-blue-500 fab fa-github text-lg leading-lg "></i><span
+                  class="lg:hidden inline-block ml-2 text-white">Github</span></a>
             </div>
           </div>
         </ul>
       </div>
     </div>
-    <!-- <hr class="border-b border-gray-100 opacity-25 my-0 py-0" /> -->
+
   </nav>
   <!--Top of Landing Page-->
   <div class="container mx-auto max-w-screen-xl pt-20">
@@ -770,6 +772,7 @@
     var navaction = document.getElementById("navAction");
     var brandname = document.getElementById("brandname");
     var toToggle = document.querySelectorAll(".toggleColour");
+    var toToggle2 = document.querySelectorAll(".toggleColour2");
     var navtitle = document.getElementById("navtitle");
 
 
@@ -785,12 +788,16 @@
         // navaction.classList.add("text-white");
         //Use to switch toggleColour colours
         for (var i = 0; i < toToggle.length; i++) {
-          toToggle[i].classList.add("text-gray-800");
+          toToggle[i].classList.add("text-black");
           toToggle[i].classList.remove("text-white");
         }
+        for (var i = 0; i < toToggle2.length; i++) {
+          toToggle2[i].classList.add("lg:text-black");
+          toToggle2[i].classList.remove("lg:text-white");
+        }
         header.classList.add("shadow");
-        navcontent.classList.remove("bg-gray-100");
-        navcontent.classList.add("bg-white");
+        // navcontent.classList.remove("bg-gray-100");
+        // navcontent.classList.add("bg-white");
         navtitle.classList.white("text-white");
         navtitle.classList.add("text-black");
       } else {
@@ -802,12 +809,15 @@
         //Use to switch toggleColour colours
         for (var i = 0; i < toToggle.length; i++) {
           toToggle[i].classList.add("text-white");
-          toToggle[i].classList.remove("text-gray-800");
+          toToggle[i].classList.remove("text-black");
         }
-
+        for (var i = 0; i < toToggle2.length; i++) {
+          toToggle2[i].classList.add("lg:text-white");
+          toToggle2[i].classList.remove("lg:text-black");
+        }
         header.classList.remove("shadow");
-        navcontent.classList.remove("bg-white");
-        navcontent.classList.add("bg-gray-100");
+        // navcontent.classList.remove("bg-white");
+        // navcontent.classList.add("bg-gray-100");
         navtitle.classList.white("text-black");
         navtitle.classList.add("text-white");
       }

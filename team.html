@@ -14,18 +14,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" /> -->
   <link rel="stylesheet" href="/softnanoweb/styles.css" />
-  <!--Replace with your tailwind.css once created-->
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
   <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
   <style>
+    .gradientlighter {
+      background: linear-gradient(260deg, #023a9b 0%, #3B82F6 100%);
+    }
+
     .gradient {
-      background: linear-gradient(0deg, #023a9b 0%, #0072CE 100%);
+      background: linear-gradient(150deg, #023a9b 0%, #0072CE 100%);
     }
   </style>
 </head>
 
-<body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Lato', sans-serif;">
+<body class="leading-normal tracking-normal text-white gradientlighter" style="font-family: 'Lato', sans-serif;">
   <!--Nav-->
   <nav id="header" class="fixed w-full z-30 top-0 text-white">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
@@ -86,14 +89,14 @@
         </svg>
 
 
-        <span
-          class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl xl:text-4xl transform transition hover:scale-105 duration-300 ease-in-out">SoftNanoLab</span>
+        <a class="toggleColour text-white font-bold text-2xl xl:text-4xl transform transition hover:scale-105 duration-300 ease-in-out"
+          href="index.html">SoftNanoLab</a>
 
       </div>
       <!-- MENU TOGGLE THING -->
       <div class="block lg:hidden pr-4">
         <button id="nav-toggle"
-          class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          class="flex items-center p-1 text-pink-800 hover:text-gray-100 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -102,13 +105,13 @@
       </div>
       <!-- MENU ITEMS! -->
       <div
-        class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-4 lg:mt-0 bg-white lg:bg-transparent text-grey-100 p-4 lg:p-0 z-20 filter brightness-125 text-lg"
+        class="hidden w-full lg:w-auto lg:flex lg:items-center mt-2 lg:mt-0 bg-pink-900 lg:bg-transparent p-4 lg:p-0 z-20 filter brightness-125 text-lg"
         id="nav-content">
         </li>
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
           <!-- Home -->
           <li class="mr-3">
-            <a class="inline-block text-black hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out"
+            <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
               href="index.html">Home</a>
           </li>
           <li class="pr-4 pl-2 my-1.5">
@@ -118,263 +121,634 @@
             </button>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-black hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out"
-              href="#">Our Research</a>
+            <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
+              href="research.html">Our Research</a>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-black hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out"
-              href="#">Publications</a>
+            <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
+              href="publications.html">Publications</a>
           </li>
           <li class="mr-3">
-            <a class="inline-block text-black hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out"
+            <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
               href="#">Files</a>
           </li>
           <li class="mr-4">
-            <a class="inline-block text-black hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out"
-              href="#">Contact</a>
+            <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
+              href="contact.html">Contact</a>
           </li>
           <!-- Twitter -->
-          <div class="flex col">
+          <div class="flex col mr-3">
             <div class="flex items-center">
-              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-2 lg:py-2 flex items-center text-xs uppercase font-bold transform transition hover:scale-150 duration-300 ease-in-out"
-                href="#pablo"><i class="text-blue-500 fab fa-twitter text-lg leading-lg "></i><span
-                  class="lg:hidden inline-block ml-2">Twitter</span></a>
+              <a class="px-3 py-2 lg:py-2 flex items-center text-xs uppercase font-bold transform transition hover:scale-150 duration-300 ease-in-out"
+                href="#pablo"><i class="text-white lg:text-blue-500 fab fa-twitter text-lg leading-lg "></i><span
+                  class="lg:hidden inline-block ml-2 text-white">Twitter</span></a>
             </div>
             <!-- Github -->
             <div class="flex items-center">
-              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-2 flex items-center text-xs uppercase font-bold transform transition hover:scale-150 duration-300 ease-in-out"
-                href="#pablo"><i class="text-blue-500 fab fa-github text-lg leading-lg "></i><span
-                  class="lg:hidden inline-block ml-2">Github</span></a>
+              <a class="px-3 py-2 flex items-center text-xs uppercase font-bold transform transition hover:scale-150 duration-300 ease-in-out"
+                href="#pablo"><i class="text-white lg:text-blue-500 fab fa-github text-lg leading-lg "></i><span
+                  class="lg:hidden inline-block ml-2 text-white">Github</span></a>
             </div>
           </div>
         </ul>
       </div>
     </div>
-    <!-- <hr class="border-b border-black opacity-25 my-0 py-0" /> -->
-    <!-- <div class="w-full mb-4">
-      <div class="h-1 mx-auto bg-white w-64 opacity-50 my-0 py-0 rounded-t"></div>
-    </div> -->
+
   </nav>
   <!-- The Team Banner -->
-  <section class="bg-white border-b mt-14 lg:mt-16 gradient">
+  <section class="mt-20 lg:mt-24 bg-transparent">
     <div class="container max-w-6xl mx-auto">
-      <h1 class="w-full my-4 text-5xl font-bold leading-tight text-center text-white">
-        The Team
+      <h1 class="w-full my-4 mb-0 lg:mb-5 text-4xl font-bold leading-tight text-center text-white">
+        Group Leader
       </h1>
-      <!-- line -->
-      <div class="mb-4 h-1 mx-auto bg-white w-64 opacity-50 my-0 py-0 rounded-t"></div>
-      <!-- Stefano Card -->
-      <section class="text-black mt-4 mb-8 mx-auto p-2 ">
-        <div class="max-w-6xl justify-between flex flex-wrap md:flex-nowrap ">
-          <!-- IMAGE GOES HERE -->
-          <div class="self-center flex justify-center mx-auto transform md:translate-x-5 z-0">
-            <img src="/softnanoweb/assets/headshots/stefano.jpg" alt=""
-              class="rounded-t-2xl md:rounded-2xl h-48 md:h-72 object-cover">
-          </div>
-          <!-- TEXT GOES HERE -->
-          <div
-            class="bg-white rounded-2xl text-center md:w-4/5 flex flex-wrap flex-col content-center md:p-3 z-10 filter drop-shadow-lg">
-            <h1 class="font-extrabold text-xl pt-4 md:text-3xl md:pt-0">Dr. Stefano Angioletti-Uberti</h1>
-            <div class="inline leading-tight text-gray-700 md:text-lg md:leading-snug">
-              <h1>Senior Lecturer, Imperial College London</h1>
-              <h1>Theory and Simulations of Materials</h1>
+      <!-- <hr class="mx-auto h-2 bg-red-500 border-0 opacity-50 "> -->
+    </div>
+  </section>
+
+  <!-- ALL OF THE TEAM! -->
+  <section class="bg-transparent">
+    <!-- Stefano Card -->
+    <div id="STEFANO" class="text-black mx-auto mb-4 p-4 flex justify-center">
+      <!-- Container for image and text -->
+      <div class="max-w-6xl flex flex-col items-center md:flex-row justify-center md:justify-between md:space-x-2">
+        <!-- IMAGE GOES HERE -->
+        <div class="relative self-center flex justify-center my-3 z-10">
+          <div class="absolute inset-0 bg-black rounded-full opacity-80 filter blur"></div>
+          <img src="/softnanoweb/assets/headshots/stefano.jpg" alt=""
+            class="relative rounded-full w-48 md:w-72 object-cover">
+        </div>
+        <!-- TEXT GOES HERE -->
+        <div class="relative flex flex-col justify-center items-center z-0">
+          <div class="absolute inset-1 rounded-xl bg-black opacity-50 filter blur-lg "></div>
+          <div class="relative bg-white rounded-2xl text-center flex flex-col mx-3 md:p-2 shadow-xl w-full lg:w-220">
+            <div class="px-3 pb-2">
+              <h1 class="font-extrabold text-xl md:text-2xl pt-3">Dr. Stefano
+                Angioletti-Uberti</h1>
+              <div class="inline leading-tight text-gray-700 md:text-lg md:leading-snug">
+                <span>Senior Lecturer (<span class="select-all underline">s.angliole@ic.ac.uk</span>)
+                </span>
+                <h1>Theory and Simulations of Materials</h1>
+              </div>
             </div>
-            <div class="text-justify text-xs mt-2 mx-3 md:text-lg">
+            <!-- ABOUT CHANGE "ONCLICK WITH NAME (SAME AS THE ONE IN SECTION.class") -->
+            <button onclick="showText('STEFANO','ABOUT')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              About</button>
+            <div class="ABOUT text-justify text-xs md:text-base mx-4 mb-3 hidden">
               I am a Senior Lecturer (Associate Professor) in Theory and Simulation of Materials at Imperial College
               London in the Department of Materials, which I joined as a Lecturer in 2016, and Group Leader of the
-              SoftNanoLab. I received my BSc and MSc in Materials Science from Universita’ degli Studi di Milano-Bicocca
-              in Milano and continued with a PhD at Imperial College London also in Materials Science. From 2010 to 2013
-              I worked as a Research Asscoiate at Univeristy of Cambridge working on development of theory and
-              simulations to describe DNA-coated colloids and their self-assembly. From 2013 to 2015 I was awarded an
-              Alexander-vom-Humboldt Fellowship and worked at the Helmholtz Zentrum Berlin on the development of
-              theoretical models for protein adsorption on nanoparticles and describtion of kinetic processes in
+              SoftNanoLab. I received my BSc and MSc in Materials Science from Universita’ degli Studi di
+              Milano-Bicocca in Milano and continued with a PhD at Imperial College London also in Materials Science.
+              From 2010 to 2013 I worked as a Research Associate at Univeristy of Cambridge working on development of
+              theory and simulations to describe DNA-coated colloids and their self-assembly. From 2013 to 2015 I was
+              awarded an Alexander-vom-Humboldt Fellowship and worked at the Helmholtz Zentrum Berlin on the development
+              of theoretical models for protein adsorption on nanoparticles and describtion of kinetic processes in
               nanoreactors. From 2015 to 2018 I was Professor of Soft Matter at Beijing University of Chemical
-              Technology, initially as a full member and later with a visiting position. In 2019, I have been awarded
-              the Chinese Academy of Science Presidential Fellowship (PiFi fellowship) to continue my collaboration with
-              the CAS Institute of Physics in Beijing.
+              Technology, initially as a full member and later with a visiting position. In 2019, I was
+              awarded the Chinese Academy of Science Presidential Fellowship (PiFi fellowship) to continue my
+              collaboration with the CAS Institute of Physics in Beijing.
             </div>
-            <div class="p-3 md:pl-0 md:pt-5">
-              <a
-                class="rounded-full px-2 py-1 md:py-3 md:px-4 text-white bg-gradient-to-b from-blue-500 to-blue-700 hover:to-pink-600 cursor-pointer text-sm md:text-lg">Read
-                more about
-                me</a>
+            <button onclick="showText('STEFANO','RESEARCH')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Current Projects & Research</button>
+            <div class="RESEARCH text-justify text-xs md:text-base mx-4 mb-3 hidden">
+              My research group focuses in applying Statistical Mechanics and various numerical techniques such as Monte
+              Carlo and Molecular Dynamics simulations to study Soft Matter systems and their applications. Broadly
+              speaking, the main aim is to understand how to tune a materials behaviour by coating it with different
+              ligands, both of synthetic and biological origin. Among the various applications studied, important
+              research themes are the self-assembly of functional structure exploiting ligand-receptor based
+              interactions, catalysis in polymer-based Nanoreactors and nanoparticle and polymers for drug delivery and
+              biosensing applications.
             </div>
-          </div>
+            <button onclick="showText('STEFANO','PUBLICATIONS')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Publications</button>
+            <div class="PUBLICATIONS text-justify mx-4 mb-2  hidden">
+              <ul class="list-disc ml-3 prose prose-sm text-xs md:text-sm prose-blue max-w-none">
+                <li>
+                  S. Bandera , C. O’Sullivan , S. Angioletti-Uberti, P. Tangney <q><a
+                      href="https://www.e3s-conferences.org/articles/e3sconf/abs/2019/18/e3sconf_isg2019_14001/e3sconf_isg2019_14001.html">An
+                      evaluation of contact models for particle-scale simulation of clay</a></q> <strong> E3S Web of
+                    Conferences, 92 (2019), 14001 </strong>, 1-6, ISSN: 2555-0403
+                </li>
+                <li> P. Mitchell, S. Tommasone, S. Angioletti-Uberti, J. Bowen,P.M. Mendes et al. <q><a
+                      href="https://pubs.acs.org/doi/10.1021/acsabm.9b00289">Precise generation of selective
+                      surface-confined glycoprotein recognition sites</a></q> , <strong>ACS Applied Bio Materials, 2
+                    (2019)</strong>, 2617-2623, ISSN: 2576-6422
+                </li>
+                <li> Angioletti-Uberti S <q><a
+                      href="https://www.sciencedirect.com/science/article/pii/B9780081023020000055">Understanding the
+                      Self-Assembly of DNA-Coated Colloids via Theory and Simulations</a></q>, <strong>Frontiers of
+                    Nanoscience, 13 (2019)</strong>, 87-123
+                </li>
+                <li> Moncho-Jordá A, Germán-Bellod A, Angioletti-Uberti S, Adroher-Benítez I, Dzubiella Jet al. <q><a
+                      href="https://pubs.acs.org/doi/10.1021/acsnano.8b07609">Nonequilibrium uptake kinetics of
+                      molecular cargo into hollow hydrogels tuned by electrosteric interactions</a></q>, <strong>ACS
+                    Nano 13 (2019), 2</strong>, 1603-1616
+                </li>
+                <li> Xu X, Angioletti-Uberti S, Lu Y, Dzubiella J, Ballauff Met al. <q><a
+                      href="https://www.ncbi.nlm.nih.gov/pubmed/30095921">Interaction of proteins with polyelectrolytes:
+                      comparison of theory to experiment</a></q>, <strong>Langmuir 35 (2019), 16 </strong>, 5373-5391,
+                  ISSN: 0743-7463
+                </li>
 
-        </div>
-      </section>
-    </div>
+              </ul>
 
+              <div class="text-center underline pt-2 text-sm md:text-base"><a
+                  class="hover:scale-105 px-2 py-1 hover:bg-gray-200 bg-opacity-50 rounded-full duration-100 ease-in"
+                  href="https://fionasander.github.io/softnanolab/publications/"> see
+                  more publications... </a></div>
 
-  </section>
-  <section class="bg-white border-b py-8">
-    <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-        Title
-      </h1>
-      <div class="w-full mb-4">
-        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-      </div>
-      <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-        <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-          <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-            <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-              xGETTING STARTED
-            </p>
-            <div class="w-full font-bold text-xl text-gray-800 px-6">
-              Lorem ipsum dolor sit amet.
             </div>
-            <p class="text-gray-800 text-base px-6 mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-              amet ligula.
-            </p>
-          </a>
-        </div>
-        <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-          <div class="flex items-center justify-start">
-            <button
-              class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-              Action
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-        <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-          <a href="#" class="flex flex-wrap hover:no-underline">
-            <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-              xGETTING STARTED
-            </p>
-            <div class="w-full font-bold text-xl text-gray-800 px-6">
-              Lorem ipsum dolor sit amet.
-            </div>
-            <p class="text-gray-800 text-base px-6 mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-              amet ligula.
-            </p>
-          </a>
-        </div>
-        <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-          <div class="flex items-center justify-center">
-            <button
-              class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-              Action
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-        <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-          <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-            <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-              xGETTING STARTED
-            </p>
-            <div class="w-full font-bold text-xl text-gray-800 px-6">
-              Lorem ipsum dolor sit amet.
-            </div>
-            <p class="text-gray-800 text-base px-6 mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-              amet ligula.
-            </p>
-          </a>
-        </div>
-        <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-          <div class="flex items-center justify-end">
-            <button
-              class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-              Action
-            </button>
+
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <section class="bg-gray-100 py-8">
-    <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
-      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-        Pricing
-      </h1>
-      <div class="w-full mb-4">
-        <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
-      </div>
-      <div class="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4">
-        <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
-          <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
-            <div class="p-8 text-3xl font-bold text-center border-b-4">
-              Free
-            </div>
-            <ul class="w-full text-center text-sm">
-              <li class="border-b py-4">Thing</li>
-              <li class="border-b py-4">Thing</li>
-              <li class="border-b py-4">Thing</li>
-            </ul>
-          </div>
-          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
-              £0
-              <span class="text-base">for one user</span>
-            </div>
-            <div class="flex items-center justify-center">
-              <button
-                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Sign Up
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
-          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-            <div class="w-full p-8 text-3xl font-bold text-center">Basic</div>
-            <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
-            <ul class="w-full text-center text-base font-bold">
-              <li class="border-b py-4">Thing</li>
-              <li class="border-b py-4">Thing</li>
-              <li class="border-b py-4">Thing</li>
-              <li class="border-b py-4">Thing</li>
-            </ul>
-          </div>
-          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="w-full pt-6 text-4xl font-bold text-center">
-              £x.99
-              <span class="text-base">/ per user</span>
-            </div>
-            <div class="flex items-center justify-center">
-              <button
-                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Sign Up
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
-          <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
-            <div class="p-8 text-3xl font-bold text-center border-b-4">
-              Pro
-            </div>
-            <ul class="w-full text-center text-sm">
-              <li class="border-b py-4">Thing</li>
-              <li class="border-b py-4">Thing</li>
-              <li class="border-b py-4">Thing</li>
-            </ul>
-          </div>
-          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-            <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
-              £x.99
-              <span class="text-base">/ per user</span>
-            </div>
-            <div class="flex items-center justify-center">
-              <button
-                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Sign Up
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Line -->
+    <div class="w-full mb-4">
+      <div class="h-1 mx-auto bg-blue-400 w-2/3 opacity-50 my-0 py-0 rounded-t"></div>
     </div>
-  </section>
-  <!-- Change the colour #f8fafc to match the previous section colour -->
-  <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    <!-- Header -->
+    <h1 class="mt-6 w-full my-4 mb-8 lg:mb-5 text-4xl font-bold leading-tight text-center text-white">
+      PhD Students
+    </h1>
+    <!-- PhD Students -->
+    <section class="max-w-6xl mx-auto grid md:grid-cols-2 gap-3 p-2">
+      <!-- Debesh -->
+      <div id="DEBESH" class="text-black mb-4 flex flex-col items-center md:space-x-2">
+        <!-- IMAGE GOES HERE -->
+        <div class="relative self-center flex justify-center my-3 z-10">
+          <div class="absolute inset-0 bg-black rounded-full opacity-80 filter blur"></div>
+          <img src="/softnanoweb/assets/headshots/debesh.jpeg" alt=""
+            class="relative rounded-full w-48 md:w-64 object-cover">
+        </div>
+        <!-- TEXT GOES HERE -->
+        <div class="relative flex flex-col items-center w-full z-0">
+          <div class="absolute inset-1 rounded-xl bg-black opacity-50 filter blur-lg"></div>
+          <div class="relative bg-white rounded-2xl text-center flex flex-col mx-2 md:py-2 lg:px-2 shadow-xl w-full">
+            <div class="px-3 pb-2">
+              <h1 class="font-extrabold text-xl md:text-2xl pt-3 flex flex-col">Debesh Mandal</h1>
+              <div class="inline leading-tight text-gray-700 md:text-lg md:leading-snug">
+                <span>PhD student since 2017</span>
+                <span class="font-bold block md:text-base">Researching Cationic Star Polymers for Gene Delivery</span>
+              </div>
+            </div>
+            <!-- ABOUT CHANGE "ONCLICK WITH NAME (SAME AS THE ONE IN SECTION.class") -->
+            <button onclick="showText('DEBESH','ABOUT')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Profile</button>
+            <div class="ABOUT text-left text-xs md:text-base mx-4 mb-3 hidden">
+              <p>
+                <span class="font-bold block lg:inline-block">Supervisors: </span>
+                Dr. Stefano Angioletti-Uberti, Dr. Theoni K. Georgiou
+              </p>
+              <p>
+                <span class="font-bold block lg:inline-block">Funding: </span>
+                Department of Materials Imperial College London Scholarship
+              </p>
+              <p class="inline-block">
+                <span class="font-bold">Email: </span>
+                <span class="select-all underline inline-block">debesh.mandal13@imperial.ac.uk</span>
+              </p>
+              <div class="w-full my-2">
+                <div class="h-1 mx-auto bg-blue-200 opacity-50 my-0 py-0 rounded-sm"></div>
+              </div>
+              <p class="text-justify">Debesh started his PhD in the Department of Materials in 2017 after finishing his
+                MEnd degree in Materials Science and Engineering also in the Materials Departmen of Imperial College.
+                The aim of his project is the investigation of the use of cationic star polymers as gene delivery
+                vectors.</p>
+
+            </div>
+            <button onclick="showText('DEBESH','RESEARCH')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Current Projects & Research</button>
+            <div class="RESEARCH text-justify text-xs md:text-base mx-4 mb-3 hidden">
+              <a class="underline font-bold" href="/softnanoweb/research/nanomedicine.html">Researching Cationic Star
+                Polymers for Gene Delivery</a>
+              <p>The project aims to interlink computer simulations with laboratory experiments to design star polymers
+                with enhanced transfection efficiency. Finally, machine learning techniques will be used to predict the
+                behaviour of these materials to further streamline the design process.
+              </p>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <!-- Fiona -->
+      <div id="FIONA" class="text-black mb-4 flex flex-col items-center md:space-x-2">
+        <!-- IMAGE GOES HERE -->
+        <div class="relative self-center flex justify-center my-3 z-10">
+          <div class="absolute inset-0 bg-black rounded-full opacity-80 filter blur"></div>
+          <img src="/softnanoweb/assets/headshots/fiona.jpg" alt=""
+            class="relative rounded-full w-48 md:w-64 object-cover">
+        </div>
+        <!-- TEXT GOES HERE -->
+        <div class="relative flex flex-col items-center w-full z-0">
+          <div class="absolute inset-1 rounded-xl bg-black opacity-50 filter blur-lg "></div>
+          <div class="relative bg-white rounded-2xl text-center flex flex-col mx-2 md:py-2 lg:px-2 shadow-xl w-full">
+            <div class="px-3 pb-2">
+              <h1 class="font-extrabold text-xl md:text-2xl pt-3 flex flex-col">Fiona Sander</h1>
+              <div class="inline leading-tight text-gray-700 md:text-lg md:leading-snug">
+                <span>PhD student since 2019</span>
+                <!-- <span class="select-all italic underline">fiona.sander17@imperial.ac.uk</span> -->
+                <span class="font-bold block md:text-base">Researching Liquid Crystal Elastomers for Molecular
+                  Sensing
+                </span>
+              </div>
+            </div>
+            <!-- ABOUT CHANGE "ONCLICK WITH NAME (SAME AS THE ONE IN SECTION.class") -->
+            <button onclick="showText('FIONA','ABOUT')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Profile</button>
+            <div class="ABOUT text-left text-xs md:text-base mx-4 mb-3 hidden">
+              <p>
+                <span class="font-bold block lg:inline-block">Supervisors: </span>
+                Dr. Stefano Angioletti-Uberti, Dr. Theoni K. Georgiou
+              </p>
+              <p>
+                <span class="font-bold block lg:inline-block">Funding: </span>
+                Department of Materials Imperial College London Scholarship
+              </p>
+              <p class="inline-block">
+                <span class="font-bold">Email: </span>
+                <span class="select-all underline inline-block">fiona.sander17@imperial.ac.uk</span>
+              </p>
+              <div class="w-full my-2">
+                <div class="h-1 mx-auto bg-blue-200 opacity-50 my-0 py-0 rounded-sm"></div>
+              </div>
+              <p class="text-justify">Fiona started her PhD in the Materials Department of Imperial College after
+                finishing her MSc in
+                Advanced
+                Material Science and Engineering also at Imperial College London. From 2013 to 2017 she obtained her
+                BEng
+                in Composite Materials Engineering in Germany while being funded by a 4 year scholarship of Airbus
+                Operations GmbH. She is currently working on liquid crystal elastomers and their use for molecular
+                sensoring.</p>
+
+            </div>
+            <button onclick="showText('FIONA','RESEARCH')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Current Projects & Research</button>
+            <div class="RESEARCH text-justify text-xs md:text-base mx-4 mb-3 hidden">
+              <a class="underline font-bold" href="/softnanoweb/research/bioinspired.html">Liquid Crystal Elastomers for
+                Molecular Sensing</a>
+              <p>As their name suggests Liquid Crystal Elastomers combine properties of both liquid crystals and
+                elastomers resulting in unique properties which offer possible application in fields ranging from soft
+                robotics and medical applications to highly sensitive sensors. Liquid crystals show changes of optical
+                properties even upon small changes in their environment which makes them highly relevant for use in
+                sensors. In combination with elastomers completely new mechanical properties arise which enable
+                mechanical actuation upon certain stimuli with neglectable energy cost amplyfying extremely small
+                changes to a macroscopic level. This characteristic gives them high relevance for sensoring application.
+              </p>
+              <p>The research project is focussing on the use of stimuli-responsive polymers in combination with liquid
+                crystals. In the literature only a small range of different polymers and combination of liquid crystal
+                and polymer responsitivity has been investigated. Therefore the exploration of the use of responsive
+                polymers in combination with liquid crystals is of high interest whereas a focus is laid upon molecular
+                sensoring in order to detect specific molecules. This can be of high interest for example in analysis of
+                water qualities in an easy, fast and affordable manner.</p>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+      <!-- Mohamed -->
+      <div id="MOHAMED" class="text-black mb-4 flex flex-col items-center md:space-x-2">
+        <!-- IMAGE GOES HERE -->
+        <div class="relative self-center flex justify-center my-3 z-10">
+          <div class="absolute inset-0 bg-black rounded-full opacity-80 filter blur"></div>
+          <img src="/softnanoweb/assets/headshots/mohamed.jpg" alt=""
+            class="relative rounded-full w-48 md:w-64 object-cover">
+        </div>
+        <!-- TEXT GOES HERE -->
+        <div class="relative flex flex-col items-center w-full z-0">
+          <div class="absolute inset-1 rounded-xl bg-black opacity-50 filter blur-lg "></div>
+          <div class="relative bg-white rounded-2xl text-center flex flex-col mx-2 md:py-2 lg:px-2 shadow-xl w-full">
+            <div class="px-3 pb-2">
+              <h1 class="font-extrabold text-xl md:text-2xl pt-3 flex flex-col">Mohamed Abdelbar</h1>
+              <div class="inline leading-tight text-gray-700 md:text-lg md:leading-snug">
+                <span>PhD student since 2019</span>
+                <span class="font-bold block md:text-base">Researching Low Friction Polymer Brushes
+                </span>
+              </div>
+            </div>
+            <!-- ABOUT CHANGE "ONCLICK WITH NAME (SAME AS THE ONE IN SECTION.class") -->
+            <button onclick="showText('MOHAMED','ABOUT')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Profile</button>
+            <div class="ABOUT text-left text-xs md:text-base mx-4 mb-3 hidden">
+              <p>
+                <span class="font-bold block lg:inline-block">Supervisors: </span>
+                Dr. Stefano Angioletti-Uberti
+              </p>
+              <p>
+                <span class="font-bold block lg:inline-block">Funding: </span>
+                Theory and Simulation of Materials Center for Doctoral Training - EPSRC
+              </p>
+              <p class="inline-block">
+                <span class="font-bold">Email: </span>
+                <span class="select-all underline inline-block">mohamed.abdelbar17@imperial.ac.uk</span>
+              </p>
+              <div class="w-full my-2">
+                <div class="h-1 mx-auto bg-blue-200 opacity-50 my-0 py-0 rounded-sm"></div>
+              </div>
+              <p class="text-justify">
+                Mohamed started his PhD in October of 2019 after doing an MSc in Materials Science.
+              </p>
+
+            </div>
+            <button onclick="showText('MOHAMED','RESEARCH')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Current Projects & Research</button>
+            <div class="RESEARCH text-justify text-xs md:text-base mx-4 mb-3 hidden">
+              <a class="underline font-bold" href="/softnanoweb/research/bioinspired.html">Design principles for
+                low-friction polymer brushes as a synthetic analogue of cartilage</a>
+              <p>The articular cartilage found covering the ends of bones in the synovial joints of mammals exhibit
+                exceptional tribological properties, giving a low friction response (μ = 0.001) even when subjected to
+                normal loads exceeding 100 atm. The goal of this project is to use coarse-grained molecular dynamics in
+                order to study the system focusing on the architecture of the polymers on the surface and thus provide
+                rational design principles for cartilage analogues. </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Esther -->
+      <div id="ESTHER" class="text-black mb-4 flex flex-col items-center md:space-x-2">
+        <!-- IMAGE GOES HERE -->
+        <div class="relative self-center flex justify-center my-3 z-10">
+          <div class="absolute inset-0 bg-black rounded-full opacity-80 filter blur"></div>
+          <img src="/softnanoweb/assets/headshots/esther.jpeg" alt=""
+            class="relative rounded-full w-48 md:w-64 object-cover">
+        </div>
+        <!-- TEXT GOES HERE -->
+        <div class="relative flex flex-col items-center w-full z-0">
+          <div class="absolute inset-1 rounded-xl bg-black opacity-50 filter blur-lg "></div>
+          <div class="relative bg-white rounded-2xl text-center flex flex-col mx-2 md:py-2 lg:px-2 shadow-xl w-full">
+            <div class="px-3 pb-2">
+              <h1 class="font-extrabold text-xl md:text-2xl pt-3 flex flex-col">Esther Osarfo-Mensah</h1>
+              <div class="inline leading-tight text-gray-700 md:text-lg md:leading-snug">
+                <span>PhD student since 2020</span>
+                <span class="font-bold block md:text-base">Researching competitive interactions & binding selectivity
+                  at bio-nano interfaces
+                </span>
+              </div>
+            </div>
+            <!-- ABOUT CHANGE "ONCLICK WITH NAME (SAME AS THE ONE IN SECTION.class") -->
+            <button onclick="showText('ESTHER','ABOUT')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Profile</button>
+            <div class="ABOUT text-left text-xs md:text-base mx-4 mb-3 hidden">
+              <p>
+                <span class="font-bold block lg:inline-block">Supervisors: </span>
+                Dr. Stefan Guldin, Dr. Stefano Angioletti-Uberti, Prof. Giuseppe Battaglia
+              </p>
+              <p>
+                <span class="font-bold block lg:inline-block">Funding: </span>
+                EPSRC and London Centre for Nanotechnology
+              </p>
+              <p class="inline-block">
+                <span class="font-bold">Email: </span>
+                <span class="select-all underline inline-block">esther.osarfo-mensah.20@ucl.ac.uk</span>
+              </p>
+              <div class="w-full my-2">
+                <div class="h-1 mx-auto bg-blue-200 opacity-50 my-0 py-0 rounded-sm"></div>
+              </div>
+              <p class="text-justify">
+                Esther began her PhD with the Advanced Characterisation of Materials Centre for Doctoral Training in
+                2020. She is based in the Materials department at Imperial College London with the Soft Nano Lab, the
+                Chemical Engineering at University College London with the Adaptative and Responsive Nanomaterials
+                Group, as well as the Molecular Bionics Lab in UCL Chemistry. After completing her MChem Chemistry
+                degree at the University of Bath in 2014, where her masters project focused on the investigation of
+                Janus gold nanoparticle structures at the DPPC phospholipid monolayer, and her Erasmus year was spent at
+                the University of Bordeaux studying the properties of ionic particles using molecular spectroscopic
+                techniques, Esther went on to work in the field of Science Communication at the Science Museum London
+                and then the Francis Crick Institute. Esther’s current PhD project focuses on the characterisation of
+                competitive interactions and binding selectivity at bio-nano interfaces.
+              </p>
+
+            </div>
+            <button onclick="showText('ESTHER','RESEARCH')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Current Projects & Research</button>
+            <div class="RESEARCH text-justify text-xs md:text-base mx-4 mb-3 hidden">
+              <a class="underline font-bold" href="/softnanoweb/research/multivalency.html">Characterising competitive
+                interactions and binding selectivity at bio-nano interfacese</a>
+              <p>When developing targeted diagnostics, the aim is to create probes that are as selective as possible
+                which can aid in the early and accurate detection of disease. This can be greatly enhanced through the
+                use of multivalent probes that exhibit superselective interactions towards the target of choice. In this
+                study the interactions of functionalised gold nanoparticles and biological receptors in the form of
+                proteins on the surface of exosomes and exosome derived supported lipid bilayers (SLBs) are
+                characterised via acoustic techniques. The binding information collected will be used to create
+                theoretical models that will feed into the design of highly selective biosensors. </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- William -->
+      <div id="WILLIAM" class="text-black mb-4 flex flex-col items-center md:space-x-2">
+        <!-- IMAGE GOES HERE -->
+        <div class="relative self-center flex justify-center my-3 z-10">
+          <div class="absolute inset-0 bg-black rounded-full opacity-80 filter blur"></div>
+          <img src="/softnanoweb/assets/headshots/will.jpg" alt=""
+            class="relative rounded-full w-48 md:w-64 object-cover">
+        </div>
+        <!-- TEXT GOES HERE -->
+        <div class="relative flex flex-col items-center w-full z-0">
+          <div class="absolute inset-1 rounded-xl bg-black opacity-50 filter blur-lg "></div>
+          <div class="relative bg-white rounded-2xl text-center flex flex-col mx-2 md:py-2 lg:px-2 shadow-xl w-full">
+            <div class="px-3 pb-2">
+              <h1 class="font-extrabold text-xl md:text-2xl pt-3 flex flex-col">William Morton</h1>
+              <div class="inline leading-tight text-gray-700 md:text-lg md:leading-snug">
+                <span>PhD student since 2019</span>
+                <span class="font-bold block md:text-base">Researching Biosensing Capabilities of Plasmonic Systems
+                </span>
+              </div>
+            </div>
+            <!-- ABOUT CHANGE "ONCLICK WITH NAME (SAME AS THE ONE IN SECTION.class") -->
+            <button onclick="showText('WILLIAM','ABOUT')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Profile</button>
+            <div class="ABOUT text-left text-xs md:text-base mx-4 mb-3 hidden">
+              <p>
+                <span class="font-bold block lg:inline-block">Supervisors: </span>
+                Dr. Stefano Angioletti-Uberti, Dr. Fang Xie
+              </p>
+              <p>
+                <span class="font-bold block lg:inline-block">Funding: </span>
+                Department of Materials Imperial College London Scholarship
+              </p>
+              <p class="inline-block">
+                <span class="font-bold">Email: </span>
+                <span class="select-all underline inline-block">william.morton16@imperial.ac.uk </span>
+              </p>
+              <div class="w-full my-2">
+                <div class="h-1 mx-auto bg-blue-200 opacity-50 my-0 py-0 rounded-sm"></div>
+              </div>
+              <p class="text-justify">
+                William started his PhD in the Materials Department of Imperial College after finishing his MSc in
+                Advanced Material Science and Engineering also at Imperial College London. From 2014 to 2018 he obtained
+                his BEng in Materials Science and Engineering at Purdue University, with a minor in Global Engineering.
+                He is currently working on plasmonic biosensing with his main supervisor, Fang Xie.
+              </p>
+
+            </div>
+            <button onclick="showText('WILLIAM','RESEARCH')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Current Projects & Research</button>
+            <div class="RESEARCH text-justify text-xs md:text-base mx-4 mb-3 hidden">
+              <a class="underline font-bold" href="/softnanoweb/research/multivalency.html">Characterising competitive
+                interactions and binding selectivity at bio-nano interfaces</a>
+              <p>The use of plasmonic materials for fluorescent biosensing has been exemplified countless times over the
+                last two decades. Small improvements are made as new nano-fabrication techniques are implemented, but
+                most support the same argument: Plasmonic metals increase fluorescent signals. As large scale
+                manufacturing becomes more feasible and cost-effective, it is now crucial to determine which factors are
+                necessary. The goal of this work is to use Fourier difference time domain (FDTD) and Green's Dyadic
+                Function (GDF) modelling to predict the success of a given substrate on fluorescence enhancement.
+                Modelled data is verified using patterned thin films, electron energy loss spectroscopy,
+                photoluminescence, and flurophore conjugated AFM tips. Together a system is developed that can predict
+                (i) deviations in biosensor concentration measurements, (ii) optimal positioning of flurophores, and
+                (iii) possibilities for dual mode imaging. When used in combination with Bayesian statistics and
+                optimisation algorithms, pivotal design questions can be answered that have so far been taken for
+                granted. </p>
+              <p>For example: Is the best approach for a plasmonic biosensor truly to reach the highest
+                enhancement? Or does this result in large deviations that bring large errors into identifying a specific
+                concentration? By addressing this problem now, before widespread implementation, research backed
+                decisions can be made about the validity of individual structures as biosensors. </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Daniele -->
+      <div id="DANIELE" class="text-black mb-4 flex flex-col items-center md:space-x-2">
+        <!-- IMAGE GOES HERE -->
+        <div class="relative self-center flex justify-center my-3 z-10">
+          <div class="absolute inset-0 bg-black rounded-full opacity-80 filter blur"></div>
+          <img src="/softnanoweb/assets/headshots/daniele.jpeg" alt=""
+            class="relative rounded-full w-48 md:w-64 object-cover">
+        </div>
+        <!-- TEXT GOES HERE -->
+        <div class="relative flex flex-col items-center w-full z-0">
+          <div class="absolute inset-1 rounded-xl bg-black opacity-50 filter blur-lg "></div>
+          <div class="relative bg-white rounded-2xl text-center flex flex-col mx-2 md:py-2 lg:px-2 shadow-xl w-full">
+            <div class="px-3 pb-2">
+              <h1 class="font-extrabold text-xl md:text-2xl pt-3 flex flex-col">Daniele Visco</h1>
+              <div class="inline leading-tight text-gray-700 md:text-lg md:leading-snug">
+                <span>PhD student since 2019</span>
+                <span class="font-bold block md:text-base">Researching The Theory of Targeted Drug Delivery
+                </span>
+              </div>
+            </div>
+            <!-- ABOUT CHANGE "ONCLICK WITH NAME (SAME AS THE ONE IN SECTION.class") -->
+            <button onclick="showText('DANIELE','ABOUT')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Profile</button>
+            <div class="ABOUT text-left text-xs md:text-base mx-4 mb-3 hidden">
+              <p>
+                <span class="font-bold block lg:inline-block">Supervisors: </span>
+                Dr. Stefano Angioletti-Uberti
+              </p>
+              <p>
+                <span class="font-bold block lg:inline-block">Funding: </span>
+                ?
+              </p>
+              <p class="inline-block">
+                <span class="font-bold">Email: </span>
+                <span class="select-all underline inline-block">d.visco18@imperial.ac.uk </span>
+              </p>
+              <div class="w-full my-2">
+                <div class="h-1 mx-auto bg-blue-200 opacity-50 my-0 py-0 rounded-sm"></div>
+              </div>
+              <p class="text-justify">
+                ?
+              </p>
+
+            </div>
+            <button onclick="showText('DANIELE','RESEARCH')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Current Projects & Research</button>
+            <div class="RESEARCH text-justify text-xs md:text-base mx-4 mb-3 hidden">
+              <a class="underline font-bold" href="/softnanoweb/research/multivalency.html">The Theory of Targeted Drug
+                Delivery</a>
+              <p>? </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Shanil -->
+      <div id="SHANIL" class="text-black mb-4 flex flex-col items-center md:space-x-2">
+        <!-- IMAGE GOES HERE -->
+        <div class="relative self-center flex justify-center my-3 z-10">
+          <div class="absolute inset-0 bg-black rounded-full opacity-80 filter blur"></div>
+          <img src="/softnanoweb/assets/headshots/shanil.png" alt=""
+            class="relative rounded-full w-48 md:w-64 object-cover">
+        </div>
+        <!-- TEXT GOES HERE -->
+        <div class="relative flex flex-col items-center w-full z-0">
+          <div class="absolute inset-1 rounded-xl bg-black opacity-50 filter blur-lg "></div>
+          <div class="relative bg-white rounded-2xl text-center flex flex-col mx-2 md:py-2 lg:px-2 shadow-xl w-full">
+            <div class="px-3 pb-2">
+              <h1 class="font-extrabold text-xl md:text-2xl pt-3 flex flex-col">Shanil Panara</h1>
+              <div class="inline leading-tight text-gray-700 md:text-lg md:leading-snug">
+                <span>PhD student since 2021</span>
+                <span class="font-bold block md:text-base">Researching The Stability of DNA Nanostructures
+                </span>
+              </div>
+            </div>
+            <!-- ABOUT CHANGE "ONCLICK WITH NAME (SAME AS THE ONE IN SECTION.class") -->
+            <button onclick="showText('SHANIL','ABOUT')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Profile</button>
+            <div class="ABOUT text-left text-xs md:text-base mx-4 mb-3 hidden">
+              <p>
+                <span class="font-bold block lg:inline-block">Supervisors: </span>
+                Dr. Stefano Angioletti-Uberti
+              </p>
+              <p>
+                <span class="font-bold block lg:inline-block">Funding: </span>
+                Department of Materials Imperial College London Scholarship
+              </p>
+              <p class="inline-block">
+                <span class="font-bold">Email: </span>
+                <span class="select-all underline inline-block">sp2017@ic.ac.uk</span>
+              </p>
+              <div class="w-full my-2">
+                <div class="h-1 mx-auto bg-blue-200 opacity-50 my-0 py-0 rounded-sm"></div>
+              </div>
+              <p class="text-justify">
+                to-write
+              </p>
+
+            </div>
+            <button onclick="showText('SHANIL','RESEARCH')"
+              class="bg-blue-200 text-blue-700 bg-opacity-60 font-bold text-base md:text-lg rounded-xl mx-10 mb-2 px-2 py-1 transform hover:scale-105 hover:bg-opacity-100 duration-200 ease-in-out">
+              Current Projects & Research</button>
+            <div class="RESEARCH text-justify text-xs md:text-base mx-4 mb-3 hidden">
+              <a class="underline font-bold" href="/softnanoweb/research/multivalency.html">The Stability of DNA
+                Nanostructures</a>
+              <p>He will write more once he has done some reading! </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PhD Students Grid -->
+    <section class="grid lg:grid-cols-2 mx-5">
+
+    </section>
+
+    <!-- Change the colour #f8fafc to match the previous section colour -->
+    <!-- <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
       <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
@@ -398,193 +772,137 @@
         </g>
       </g>
     </g>
-  </svg>
-  <section class="container mx-auto text-center py-6">
-    <div class="font-bold text-3xl mb-4">SoftNanoLab</div>
-    <div class="w-full mb-4">
-      <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
-    </div>
-    <div class="my-4 text-white">
-      <p class="font-bold pb-3">Dr. Stefano Angioletti-Uberti</p>
-      <p class="pb-1">Senior Lecturer, Theory and Simulations of Materials</p>
-      <p class="pb-1">Department of Materials</p>
-      <p class="pb-1">Imperial College London</p>
-    </div>
-    <div class="w-full mb-4">
-      <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
-    </div>
-    <div class="text-center text-xs uppercase font-bold tracking-widest text-gray-300">Site designed by Shanil
-      Panara</div>
-    <!-- <button
+  </svg> -->
+    <!-- FOOTER -->
+    <section class="container mx-auto text-center py-6">
+      <div class="font-bold text-3xl mb-4">SoftNanoLab</div>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+      <div class="my-4 text-white">
+        <p class="font-bold pb-3">Dr. Stefano Angioletti-Uberti</p>
+        <p class="pb-1">Senior Lecturer, Theory and Simulations of Materials</p>
+        <p class="pb-1">Department of Materials</p>
+        <p class="pb-1">Imperial College London</p>
+      </div>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto bg-white w-2/6 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+      <div class="text-center text-xs uppercase font-bold tracking-widest text-gray-300">Site designed by Shanil
+        Panara</div>
+      <!-- <button
       class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
       Action!
     </button> -->
-  </section>
-  <!--
-  <footer class="bg-white">
-    <div class="container mx-auto px-8">
-      <div class="w-full flex flex-col md:flex-row py-6">
-        <div class="flex-1 mb-6 text-black">
-          <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+    </section>
 
-            <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
-              <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502"
-                transform="matrix(1,0,0,1,0,0)" />
-              <path class="plane-take-off"
-                d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z " />
-            </svg>
-            LANDING
-          </a>
-        </div>
-        <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Links</p>
-          <ul class="list-reset mb-6">
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">FAQ</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Help</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Support</a>
-            </li>
-          </ul>
-        </div>
-        <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Legal</p>
-          <ul class="list-reset mb-6">
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Privacy</a>
-            </li>
-          </ul>
-        </div>
-        <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Social</p>
-          <ul class="list-reset mb-6">
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Facebook</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Linkedin</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Twitter</a>
-            </li>
-          </ul>
-        </div>
-        <div class="flex-1">
-          <p class="uppercase text-gray-500 md:mb-6">Company</p>
-          <ul class="list-reset mb-6">
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Official Blog</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">About Us</a>
-            </li>
-            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <a href="https://www.freepik.com/free-photos-vectors/background" class="text-gray-500">Background vector created by
-      freepik - www.freepik.com</a>
-  </footer>
-  jQuery if you need it
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  -->
-  <script>
-    var scrollpos = window.scrollY;
-    var header = document.getElementById("header");
-    var navcontent = document.getElementById("nav-content");
-    var navaction = document.getElementById("navAction");
-    var brandname = document.getElementById("brandname");
-    var toToggle = document.querySelectorAll(".toggleColour");
-    var navtitle = document.getElementById("navtitle");
+    <script>
+      var scrollpos = window.scrollY;
+      var header = document.getElementById("header");
+      var navcontent = document.getElementById("nav-content");
+      var navaction = document.getElementById("navAction");
+      var brandname = document.getElementById("brandname");
+      var toToggle = document.querySelectorAll(".toggleColour");
+      var toToggle2 = document.querySelectorAll(".toggleColour2");
+      var navtitle = document.getElementById("navtitle");
 
 
-    document.addEventListener("scroll", function () {
-      /*Apply classes for slide in bar*/
-      scrollpos = window.scrollY;
+      document.addEventListener("scroll", function () {
+        /*Apply classes for slide in bar*/
+        scrollpos = window.scrollY;
 
-      if (scrollpos > 10) {
-        header.classList.add("bg-white");
-        navaction.classList.remove("bg-black");
-        navaction.classList.add("gradient");
-        // navaction.classList.remove("text-gray-800");
-        // navaction.classList.add("text-white");
-        //Use to switch toggleColour colours
-        for (var i = 0; i < toToggle.length; i++) {
-          toToggle[i].classList.add("text-gray-800");
-          toToggle[i].classList.remove("text-white");
+        if (scrollpos > 10) {
+          header.classList.add("bg-white");
+          navaction.classList.remove("bg-black");
+          navaction.classList.add("gradient");
+          // navaction.classList.remove("text-gray-800");
+          // navaction.classList.add("text-white");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-black");
+            toToggle[i].classList.remove("text-white");
+          }
+          for (var i = 0; i < toToggle2.length; i++) {
+            toToggle2[i].classList.add("lg:text-black");
+            toToggle2[i].classList.remove("lg:text-white");
+          }
+          header.classList.add("shadow");
+          // navcontent.classList.remove("bg-gray-100");
+          // navcontent.classList.add("bg-white");
+          navtitle.classList.white("text-white");
+          navtitle.classList.add("text-black");
+        } else {
+          header.classList.remove("bg-white");
+          navaction.classList.remove("gradient");
+          navaction.classList.add("bg-black");
+          // navaction.classList.remove("text-white");
+          // navaction.classList.add("text-gray-800");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-white");
+            toToggle[i].classList.remove("text-black");
+          }
+          for (var i = 0; i < toToggle2.length; i++) {
+            toToggle2[i].classList.add("lg:text-white");
+            toToggle2[i].classList.remove("lg:text-black");
+          }
+          header.classList.remove("shadow");
+          // navcontent.classList.remove("bg-white");
+          // navcontent.classList.add("bg-gray-100");
+          navtitle.classList.white("text-black");
+          navtitle.classList.add("text-white");
         }
-        header.classList.add("shadow");
-        navcontent.classList.remove("bg-gray-100");
-        navcontent.classList.add("bg-white");
-        navtitle.classList.white("text-white");
-        navtitle.classList.add("text-black");
-      } else {
-        header.classList.remove("bg-white");
-        navaction.classList.remove("gradient");
-        navaction.classList.add("bg-black");
-        // navaction.classList.remove("text-white");
-        // navaction.classList.add("text-gray-800");
-        //Use to switch toggleColour colours
-        for (var i = 0; i < toToggle.length; i++) {
-          toToggle[i].classList.add("text-white");
-          toToggle[i].classList.remove("text-gray-800");
-        }
+      });
+    </script>
+    <script>
+      /*Toggle dropdown list*/
+      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
 
-        header.classList.remove("shadow");
-        navcontent.classList.remove("bg-white");
-        navcontent.classList.add("bg-gray-100");
-        navtitle.classList.white("text-black");
-        navtitle.classList.add("text-white");
-      }
-    });
-  </script>
-  <script>
-    /*Toggle dropdown list*/
-    /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+      var navMenuDiv = document.getElementById("nav-content");
+      var navMenu = document.getElementById("nav-toggle");
 
-    var navMenuDiv = document.getElementById("nav-content");
-    var navMenu = document.getElementById("nav-toggle");
+      document.onclick = check;
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
 
-    document.onclick = check;
-    function check(e) {
-      var target = (e && e.target) || (event && event.srcElement);
-
-      //Nav Menu
-      if (!checkParent(target, navMenuDiv)) {
-        // click NOT on the menu
-        if (checkParent(target, navMenu)) {
-          // click on the link
-          if (navMenuDiv.classList.contains("hidden")) {
-            navMenuDiv.classList.remove("hidden");
-            navMenuDiv.classList.toggle('transform');
+        //Nav Menu
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains("hidden")) {
+              navMenuDiv.classList.remove("hidden");
+              navMenuDiv.classList.toggle('transform');
+            } else {
+              navMenuDiv.classList.add("hidden");
+            }
           } else {
+            // click both outside link and outside menu, hide menu
             navMenuDiv.classList.add("hidden");
           }
+        }
+      }
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
+        }
+        return false;
+      }
+    </script>
+    <script>
+      function showText(name, textsection) {
+        var textSelection = document.getElementById(name).querySelectorAll(`.${textsection}`);
+        if (textSelection[0].classList.contains("hidden")) {
+          textSelection[0].classList.remove("hidden");
         } else {
-          // click both outside link and outside menu, hide menu
-          navMenuDiv.classList.add("hidden");
+          textSelection[0].classList.add("hidden");
         }
+
       }
-    }
-    function checkParent(t, elm) {
-      while (t.parentNode) {
-        if (t == elm) {
-          return true;
-        }
-        t = t.parentNode;
-      }
-      return false;
-    }
-  </script>
+    </script>
 </body>
 
 </html>
