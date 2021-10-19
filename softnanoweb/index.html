@@ -96,7 +96,7 @@
       <!-- MENU TOGGLE THING -->
       <div class="block lg:hidden pr-4">
         <button id="nav-toggle"
-          class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          class="flex items-center p-1 text-pink-800 hover:text-gray-100 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <title>Menu</title>
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -105,7 +105,7 @@
       </div>
       <!-- MENU ITEMS! -->
       <div
-        class="hidden w-full lg:w-auto lg:flex lg:items-center bg-pink-900 lg:bg-transparent text-grey-100 p-4 lg:p-0 z-20 filter brightness-125 text-lg"
+        class="hidden w-full lg:w-auto lg:flex lg:items-center mt-2 lg:mt-0 bg-pink-900 lg:bg-transparent p-4 lg:p-0 z-20 filter brightness-125 text-lg"
         id="nav-content">
         </li>
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
@@ -121,11 +121,11 @@
           </li>
           <li class="mr-3">
             <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
-              href="#">Our Research</a>
+              href="research.html">Our Research</a>
           </li>
           <li class="mr-3">
             <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
-              href="#">Publications</a>
+              href="publications.html">Publications</a>
           </li>
           <li class="mr-3">
             <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
@@ -133,7 +133,7 @@
           </li>
           <li class="mr-4">
             <a class="inline-block text-white hover:text-pink-800 py-2 px-3 transform transition hover:scale-125 duration-150 ease-in-out toggleColour2"
-              href="#">Contact</a>
+              href="contact.html">Contact</a>
           </li>
           <!-- Twitter -->
           <div class="flex col mr-3">
@@ -772,6 +772,7 @@
     var navaction = document.getElementById("navAction");
     var brandname = document.getElementById("brandname");
     var toToggle = document.querySelectorAll(".toggleColour");
+    var toToggle2 = document.querySelectorAll(".toggleColour2");
     var navtitle = document.getElementById("navtitle");
 
 
@@ -787,12 +788,16 @@
         // navaction.classList.add("text-white");
         //Use to switch toggleColour colours
         for (var i = 0; i < toToggle.length; i++) {
-          toToggle[i].classList.add("text-gray-800");
+          toToggle[i].classList.add("text-black");
           toToggle[i].classList.remove("text-white");
         }
+        for (var i = 0; i < toToggle2.length; i++) {
+          toToggle2[i].classList.add("lg:text-black");
+          toToggle2[i].classList.remove("lg:text-white");
+        }
         header.classList.add("shadow");
-        navcontent.classList.remove("bg-gray-100");
-        navcontent.classList.add("bg-white");
+        // navcontent.classList.remove("bg-gray-100");
+        // navcontent.classList.add("bg-white");
         navtitle.classList.white("text-white");
         navtitle.classList.add("text-black");
       } else {
@@ -804,12 +809,15 @@
         //Use to switch toggleColour colours
         for (var i = 0; i < toToggle.length; i++) {
           toToggle[i].classList.add("text-white");
-          toToggle[i].classList.remove("text-gray-800");
+          toToggle[i].classList.remove("text-black");
         }
-
+        for (var i = 0; i < toToggle2.length; i++) {
+          toToggle2[i].classList.add("lg:text-white");
+          toToggle2[i].classList.remove("lg:text-black");
+        }
         header.classList.remove("shadow");
-        navcontent.classList.remove("bg-white");
-        navcontent.classList.add("bg-gray-100");
+        // navcontent.classList.remove("bg-white");
+        // navcontent.classList.add("bg-gray-100");
         navtitle.classList.white("text-black");
         navtitle.classList.add("text-white");
       }
